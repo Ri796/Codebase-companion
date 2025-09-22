@@ -1,12 +1,10 @@
-# app.py (Corrected for Windows File Locking Issue)
-
 import streamlit as st
 import shutil
 import os
-import stat # Required for the new deletion function
+import stat
 from utils import clone_repository, load_documents_from_directory, create_vector_store, get_conversational_chain
 
-# --- A more robust function to delete the temp directory on Windows ---
+# function to delete the temp directory on Windows 
 def remove_readonly(func, path, excinfo):
     """
     Error handler for shutil.rmtree.
@@ -47,18 +45,18 @@ def main():
             with st.spinner("Processing... This may take a few minutes for large repositories."):
                 local_path = "temp_repo"
 
-                # --- Use the more robust deletion method ---
+                # deletion method 
                 if os.path.exists(local_path):
                     # Pass the special error handler to shutil.rmtree
                     shutil.rmtree(local_path, onerror=remove_readonly)
                 
-                # 1. Clone the repository
+                # Clone the repository
                 clone_repository(repo_url, local_path)
                 
-                # 2. Load the documents
+                # Load the documents
                 documents = load_documents_from_directory(local_path)
                 
-                # 3. Create the vector store
+                # Create the vector store
                 if documents:
                     st.session_state.vector_store = create_vector_store(documents)
                     st.success("Repository processed successfully! You can now ask questions.")
