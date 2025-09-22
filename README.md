@@ -116,4 +116,4 @@ Secrets (like the `GOOGLE_API_KEY`) are managed securely using Streamlit's built
 
 ---
 
-*Built by [Your Name](https://github.com/your-username).*
+*Built by [Riddhima Patra](https://github.com/Ri796).*
