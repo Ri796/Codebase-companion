@@ -19,7 +19,7 @@ def clone_repository(repo_url, local_path):
     else:
         print("Repository already exists locally.")
 
-def load_documents_from_directory(directory_path)
+def load_documents_from_directory(directory_path):
     """Loads documents from a directory, focusing on common text-based file types
     to improve relevance and speed."""
     
