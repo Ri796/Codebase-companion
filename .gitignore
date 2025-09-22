@@ -1,0 +1,9 @@
+# Environment variables
+.env
+
+# Temporary repository folder
+temp_repo/
+
+# Python cache
+__pycache__/
+*.pyc
