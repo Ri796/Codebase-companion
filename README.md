@@ -2,13 +2,13 @@
 
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://your-app-name.streamlit.app/](https://codebase-companion-9khggejvu36vgelmfezeah.streamlit.app/))
 
 An intelligent chatbot that allows you to have a natural language conversation with any public GitHub repository. Powered by a Retrieval-Augmented Generation (RAG) pipeline, this tool helps developers quickly understand new codebases, find specific information, and accelerate their workflow.
 
 ## 🚀 Live Demo
 
-[**Try Codebase Companion Now!**](https://your-app-name.streamlit.app/)  <!-- 👈 **IMPORTANT: REPLACE THIS URL WITH YOUR LIVE STREAMLIT APP URL!** -->
+[**Try Codebase Companion Now!**]([https://your-app-name.streamlit.app/](https://codebase-companion-9khggejvu36vgelmfezeah.streamlit.app/))  <!-- 👈 **IMPORTANT: REPLACE THIS URL WITH YOUR LIVE STREAMLIT APP URL!** -->
 
 ## 📸 Screenshot
 
