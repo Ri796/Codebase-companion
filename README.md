@@ -14,7 +14,9 @@ An intelligent chatbot that allows you to have a natural language conversation w
 
 <!-- **IMPORTANT: ADD A SCREENSHOT OF YOUR APP IN ACTION HERE!** -->
 <!-- You can drag and drop an image into the GitHub editor to upload it. -->
-![App Screenshot](https://i.imgur.com/your-screenshot-filename.png) 
+![App Screenshot]
+<img width="1086" height="612" alt="image" src="https://github.com/user-attachments/assets/28250750-1586-45d7-bd53-a6ac489fdf5d" />
+
 
 ## ✨ Features
 
