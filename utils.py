@@ -1,6 +1,6 @@
 import os
 from git import Repo
-from dotenv import load_dotenv  # <-- IMPORT THE NEW LIBRARY
+from dotenv import load_dotenv  
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import DirectoryLoader, TextLoader
 from langchain_community.vectorstores import FAISS
@@ -8,28 +8,21 @@ from langchain.chains.question_answering import load_qa_chain
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_google_genai import GoogleGenerativeAI
 
-# --- This is the new, secure way to load the API key ---
 load_dotenv()
-# The load_dotenv() function looks for a .env file and loads its content
-# into the environment variables. The API key is now in os.environ.
-
-# --- Now, os.environ["GOOGLE_API_KEY"] will work, but the key is NOT hardcoded ---
-# We no longer need the line: os.environ["GOOGLE_API_KEY"] = "..."
-
 
 def clone_repository(repo_url, local_path):
     """Clones a GitHub repository to a local path."""
+    
     if not os.path.exists(local_path):
         print(f"Cloning repository to {local_path}...")
         Repo.clone_from(repo_url, local_path)
     else:
         print("Repository already exists locally.")
 
-def load_documents_from_directory(directory_path):
-    """
-    Loads documents from a directory, focusing on common text-based file types
-    to improve relevance and speed.
-    """
+def load_documents_from_directory(directory_path)
+    """Loads documents from a directory, focusing on common text-based file types
+    to improve relevance and speed."""
+    
     print("Loading relevant documents from the repository...")
     supported_extensions = [".py", ".md", ".txt", ".json", ".html", ".css", ".js", ".ipynb", "Dockerfile", ".yml", ".yaml"]
     
